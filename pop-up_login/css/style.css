@@ -86,6 +86,20 @@ label, p, a{
     margin-bottom: 10px;
 }
 
+.inserir-senha-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#vis_on{
+    background-color: var(--cor-laranja);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    margin-right: 10px;
+}
+
 .button-container{
     margin: 20px;
 }
@@ -121,11 +135,3 @@ label, p, a{
     text-align: center;
 }
 
-#vis_on{
-    background-color: var(--cor-laranja);
-    border-radius: 5px;
-    cursor: pointer;
-    position: absolute;
-    top: 45%;
-    margin-left: 10px;
-}
