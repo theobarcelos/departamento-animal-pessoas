@@ -1,0 +1,120 @@
+:root {
+    --cor-verde-agua: #348888;
+    --cor-verde-agua-claro: #d5f1ef;
+    --cor-laranja: #FA7F08;
+    --cor-escuro: #2d2d2d;
+    --cor-cinza: #707070;
+    --cor-branco: #ffffff;
+    --cor-vermelho: #F24405;
+    --cor-verde-petroleo: #348888; 
+    --cor-ciano-medio: #22BABB; 
+    --cor-ciano-claro:#9EF8EE; 
+    --cor-laranja-vibrante: lab(66.55% 40.45 72.21); 
+    --cor-laranja-avermelhado: #f24405;        
+    --bnt-laranja-vibrante-80: lab(66.55% 40.45 72.21 / 0.80); 
+}
+
+*{
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background-color: gray;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-branco);
+    width: 50%;
+    border-radius: 20px;
+}
+
+.title-container{
+    background-color: var(--cor-verde-agua);
+    width: 100%;
+    border-radius: 19px 19px 0px 0px;
+}
+
+.title-login{
+    flex-wrap: nowrap;
+    text-align: center;
+    color: var(--cor-branco);
+}
+
+.logo{
+   max-width: 173px;
+   padding: 20px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs-container{
+    position: relative;
+}
+
+.input-login{
+    border-color: #ccc;
+    padding: 10px;
+    padding-top: 20px; /* Espaço extra no topo para o label subir */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    background: transparent; /* Transparente para ver o fundo se necessário */
+    transition: border-color 0.2s;
+}
+
+.input-login:focus{
+    border-color: var(--cor-laranja);
+}
+
+.label-login{
+    position: absolute;
+    top: 12px; /* Posição inicial (dentro do input) */
+    left: 10px;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none; /* Permite clicar "através" do label para focar no input */
+    transition: 0.2s ease all; /* Animação suave */
+}
+
+.input-login:focus + .label-login,
+.input-login:not(:placeholder-shown) + .label-login {
+    top: -8px;       /* Move para cima */
+    left: 8px;       /* Ajuste lateral */
+    font-size: 12px; /* Diminui o texto */
+    background-color: #f0f2f5; /* Fundo igual ao do body para cobrir a linha do input (opcional) */
+    padding: 0 4px;  /* Respiro lateral */
+    color: #6200ea;  /* Muda a cor */
+    font-weight: bold;
+}
+
+.button-container{
+    margin: 20px;
+}
+
+.btn-laranja {
+    background: var(--cor-laranja);
+    color: var(--cor-branco);
+    font-weight: 700;
+    padding: 0.6rem 3rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.btn-laranja:hover {
+    background: #ff8f33;
+    color: var(--cor-branco);
+}
