@@ -22,13 +22,19 @@ body{
     background-color: gray;
 }
 
+.form-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .login{
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
     background-color: var(--cor-branco);
-    width: 50%;
+    min-width: 50%;
     border-radius: 20px;
 }
 
@@ -49,51 +55,31 @@ body{
    padding: 20px;
 }
 
-fieldset{
+.inputs-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.inputs-container{
-    position: relative;
-}
-
-.input-login{
-    border-color: #ccc;
-    padding: 10px;
-    padding-top: 20px; /* Espaço extra no topo para o label subir */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
-    font-size: 16px;
-    background: transparent; /* Transparente para ver o fundo se necessário */
-    transition: border-color 0.2s;
-}
-
-.input-login:focus{
-    border-color: var(--cor-laranja);
 }
 
 .label-login{
-    position: absolute;
-    top: 12px; /* Posição inicial (dentro do input) */
-    left: 10px;
-    font-size: 16px;
-    color: #999;
-    pointer-events: none; /* Permite clicar "através" do label para focar no input */
-    transition: 0.2s ease all; /* Animação suave */
+    margin: 2px;
 }
 
-.input-login:focus + .label-login,
-.input-login:not(:placeholder-shown) + .label-login {
-    top: -8px;       /* Move para cima */
-    left: 8px;       /* Ajuste lateral */
-    font-size: 12px; /* Diminui o texto */
-    background-color: #f0f2f5; /* Fundo igual ao do body para cobrir a linha do input (opcional) */
-    padding: 0 4px;  /* Respiro lateral */
-    color: #6200ea;  /* Muda a cor */
-    font-weight: bold;
+.input-login{
+    border: 2px solid #ccc;
+    transition: 0.85s;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.input-login:focus{
+    border: 2px solid var(--cor-ciano-medio);
+    outline: none;
+    transition: 0.85s;
+}
+
+#identificador{
+    margin-bottom: 10px;
 }
 
 .button-container{
@@ -117,4 +103,17 @@ fieldset{
 .btn-laranja:hover {
     background: #ff8f33;
     color: var(--cor-branco);
+}
+
+.esq-senha-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+}
+.cadastro-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+    text-align: center;
 }
