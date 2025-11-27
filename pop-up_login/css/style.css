@@ -110,10 +110,9 @@ body{
     flex-wrap: wrap;
     text-wrap: wrap;
 }
+
 .cadastro-container{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    text-wrap: wrap;
     text-align: center;
 }
