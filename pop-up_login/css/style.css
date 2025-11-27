@@ -120,3 +120,12 @@ label, p, a{
     align-items: center;
     text-align: center;
 }
+
+#vis_on{
+    background-color: var(--cor-laranja);
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    margin-left: 10px;
+}
