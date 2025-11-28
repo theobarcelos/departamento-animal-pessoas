@@ -130,3 +130,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Cadastro
+
+let botaoPF = document.getElementById('button-pf');
+let botaoPJ = document.getElementById('button-pj');
+let pjContainer = document.getElementById('pj');
+let pfContainer = document.getElementById('pf');
+
+function showPJ(){
+    pjContainer.style.display = "flex";
+    botaoPJ.style.display = "none";
+    
+    pfContainer.style.display = "none";
+    botaoPF.style.display = "flex";    
+}
+function showPF(){
+    pjContainer.style.display = "none";
+    botaoPJ.style.display = "flex";
+
+    pfContainer.style.display = "flex";
+    botaoPF.style.display = "none";
+}
+
+

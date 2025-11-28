@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- Estilo CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <!-- Barra de Acessibilidade -->
@@ -151,7 +152,98 @@
     </aside>
 
     <main class="corpo">
-        
+        <section class="cadastro">
+            <h1 class="titulo-cadastro">Cadastro inicial</h1>
+
+            <form class="formulario-cadastro">
+                <div class="tab-buttons">
+                    <button type="button" class="button-pj" id="button-pj" onclick="showPJ()">Trocar cadastro para Pessoa Jurídica</button>
+                    <button type="button" class="button-pf" id="button-pf" onclick="showPF()">Trocar cadastro para Pessoa Física</button>
+                </div>
+
+                <div class="pf-container" id="pf">
+                    <h2 class="title-pf">Dados Pessoais</h2>
+
+                    <div class="cadastro-insert">
+                        <label for="pf-nome" class="cadastro-label">Nome completo</label>
+                        <input type="text" name="pf-nome" id="pf-nome" class="cadastro-input">
+                    </div>
+
+                    <div class="cadastro-insert">
+                        <label for="pf-cpf" class="cadastro-label">CPF</label>
+                        <input type="text" maxlength="11" name="pf-cpf" id="pf-cpf" class="cadastro-input">
+                    </div>
+                    
+                    <div class="cadastro-insert">
+                        <label for="pf-data_nasc" class="cadastro-label">Data de nascimento</label>
+                        <input type="date" name="pf-data_nasc" id="pf-data_nasc" class="cadastro-input">
+                    </div>
+                    
+                    <div class="cadastro-insert">
+                        <label for="pf-num_tel" class="cadastro-label">Número de telefone</label>
+                        <input type="text" name="pf-num_tel" id="pf-num_tel" class="cadastro-input">
+                    </div>
+
+                    <div class="cadastro-insert">
+                        <label for="pf-email" class="cadastro-label">E-mail</label>
+                        <input type="text" name="pf-email" id="pf-email" class="cadastro-input">
+                    </div>
+
+                    <div class="cadastro-insert">
+                        <label for="pf-senha" class="cadastro-label">Senha</label>
+                        <input type="password" name="pf-senha" id="pf-senha" class="cadastro-input">
+                    </div>
+
+                    <div class="cadastro-insert">
+                        <label for="pf-cep" class="cadastro-label">CEP</label>
+                        <input type="text" name="pf-cep" id="pf-cep" class="cadastro-input">
+                    </div>
+                </div>
+
+                <div class="pj-container" id="pj">
+                    <h2 class="title-pj">Dados Empresariais</h2>
+
+                    <div class="cadastro-insert">
+                        <label for="pj-raz_social" class="cadastro-label">Razão social</label>
+                        <input type="text" name="pf-raz_social" id="pj-raz_social" class="cadastro-input">
+                    </div>
+
+                    <div class="cadastro-insert">
+                        <label for="pj-nome_fant" class="cadastro-label">Nome Fantasia</label>
+                        <input type="text" name="pj-nome_fant" id="pj-nome_fant" class="cadastro-input">
+                    </div>
+                    
+                    <div class="cadastro-insert">
+                        <label for="pj-cnpj" class="cadastro-label">CNPJ</label>
+                        <input type="text" maxlength="14" name="pj-cnpj" id="pj-cnpj" class="cadastro-input">
+                    </div>
+                    
+                    <div class="cadastro-insert">
+                        <label for="pj-num_tel" class="cadastro-label">Número de telefone</label>
+                        <input type="text" name="pj-num_tel" id="pj-num_tel" class="cadastro-input">
+                    </div>
+
+                    <div class="cadastro-insert">
+                        <label for="pj-email" class="cadastro-label">E-mail</label>
+                        <input type="text" name="pj-email" id="pj-email" class="cadastro-input">
+                    </div>
+
+                    <div class="cadastro-insert">
+                        <label for="pj-senha" class="cadastro-label">Senha</label>
+                        <input type="password" name="pj-senha" id="pj-senha" class="cadastro-input">
+                    </div>
+
+                    <div class="cadastro-insert">
+                        <label for="pj-cep" class="cadastro-label">CEP</label>
+                        <input type="text" name="pj-cep" id="pj-cep" class="cadastro-input">
+                    </div>
+                </div> 
+
+                <button type="button" class="btn-laranja">Cadastrar-se</button>
+            </form> 
+
+
+        </section>
     </main>
     
     <!-- Rodapé -->
