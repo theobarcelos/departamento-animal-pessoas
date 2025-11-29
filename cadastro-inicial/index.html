@@ -239,32 +239,62 @@
                     </div>
                 </div>
                 
-                <table border="1">
+                <table>
                     <tr class="data-label">
-                        <th><label for="cadastro-input-rua" id="cadastro-input-rua" class="cadastro-label">Rua</label></th>
+                        <th colspan="2"><label for="cadastro-input-rua" id="cadastro-input-rua" class="cadastro-label">Rua</label></th>
                         <th><label for="cadastro-input-numero" class="cadastro-label">Número</label></th>
                     </tr>
                     <tr class="data-input-1">
-                        <td><input type="text" id="cadastro-input-rua" class="cadastro-input-locale"></td>
+                        <td colspan="2"><input type="text" id="cadastro-input-rua" class="cadastro-input-locale"></td>
                         <td><input type="text" id="cadastro-input-numero" class="cadastro-input-locale"></td>
                     </tr>
                     <tr class="data-label">
                         <th class="data-container"><label for="cadastro-input-cidade" class="cadastro-label">Cidade</label></th>
                         <th class="data-container"><label for="cadastro-input-bairro" class="cadastro-label">Bairro</label></th>
+                        <th class="data-container"><label for="cadastro-input-uf" class="cadastro-label">UF</label></th>
                     </tr>
 
                     <tr class="data-input-2">
                         <td class="data-container"><input type="text" id="cadastro-input-cidade"  class="cadastro-input-locale"></td>
                         <td class="data-container"><input type="text" id="cadastro-input-bairro"  class="cadastro-input-locale"></td>
+                        <td class="data-container">
+                            <select type="text" id="cadastro-input-uf"  class="cadastro-input-locale">
+                                <option value="acre">AC</option>
+                                <option value="alagoas">AL</option>
+                                <option value="amazonas">AM</option>
+                                <option value="bahia">BA</option>
+                                <option value="ceara">CE</option>
+                                <option value="distrito-federal">DF</option>
+                                <option value="espirito-santo">ES</option>
+                                <option value="goias">GO</option>
+                                <option value="maranhao">MA</option>
+                                <option value="mato-grosso">MT</option>
+                                <option value="mato-grosso-sul">MS</option>
+                                <option value="minas-gerais">MG</option>
+                                <option value="para">PA</option>
+                                <option value="paraiba">PB</option>
+                                <option value="parana">PR</option>
+                                <option value="pernambuco">PE</option>
+                                <option value="piaui">PI</option>
+                                <option value="rio-de-janeiro">RJ</option>
+                                <option value="rio-grande-norte">RN</option>
+                                <option value="rio-grande-sul">RS</option>
+                                <option value="rondonia">RO</option>
+                                <option value="roraima">RR</option>
+                                <option value="santa-catarina">SC</option>
+                                <option value="sao-paulo">SP</option>
+                                <option value="sergipe">SE</option>
+                                <option value="tocantins">TO</option>
+                            </select>
+                        </td>
                     </tr>
 
                     <tr>
-                        <th class="data-container"><label for="cadastro-input-uf" class="cadastro-label">UF</label></th>
-                        <th><label for="cadastro-input-complemento" class="cadastro-label">Complemento</label></th>
+                        <th colspan="3"><label for="cadastro-input-complemento" class="cadastro-label">Complemento</label></th>
                     </tr>
                     <tr>
-                        <td class="data-container"><input type="text" maxlength="2" id="cadastro-input-uf"  class="cadastro-input-locale"></td>
-                        <td><input type="text" id="cadastro-input-complemento" class="cadastro-input-locale"></td>
+                        
+                        <td colspan="3"><input type="text" id="cadastro-input-complemento" class="cadastro-input-locale"></td>
                     </tr>
                 </table>
 
