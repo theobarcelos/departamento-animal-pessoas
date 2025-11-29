@@ -1207,6 +1207,13 @@ label{
     width: 40%;
 }
 
+
+
+table{
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
 .cadastro-input-locale{
     border: 2px solid #ccc;
     padding: 15px 15px 15px 10px;
@@ -1216,24 +1223,8 @@ label{
     width: 100%;
 }
 
-table{
-    margin-bottom: 20px;
-    border: 2px solid black;
-    align-items: center;
-}
-
 .cadastro-input-locale:hover{
     outline: none;
     border: 2px solid var(--cor-verde-agua);
     transition: 0.85s ease;
-}
-
-#cadastro-input-uf{
-    /* width: 20%; */
-    text-align: center;
-}
-
-#cadastro-input-numero{
-    width: 30%;
-    text-align: center;
 }
