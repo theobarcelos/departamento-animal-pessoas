@@ -196,7 +196,7 @@
 
                     <div class="cadastro-insert">
                         <label for="pf-cep" class="cadastro-label">CEP</label>
-                        <input type="text" name="pf-cep" id="pf-cep" class="cadastro-input">
+                        <input type="text" name="pf-cep" id="pf-cep" class="cadastro-input" maxlength="8">
                     </div>
                 </div>
 
@@ -235,9 +235,41 @@
 
                     <div class="cadastro-insert">
                         <label for="pj-cep" class="cadastro-label">CEP</label>
-                        <input type="text" name="pj-cep" id="pj-cep" class="cadastro-input">
+                        <input type="text" name="pj-cep" id="pj-cep" class="cadastro-input" maxlength="8">
                     </div>
-                </div> 
+                </div>
+                
+                <table>
+                    <tr class="data-label">
+                        <th colspan="2"><label for="cadastro-input-rua" id="cadastro-input-rua" class="cadastro-label">Rua</label></th>
+                        <th><label for="cadastro-input-numero" class="cadastro-label">Número</label></th>
+                    </tr>
+                    <tr class="data-input-1">
+                        <td colspan="2"><input type="text" id="cadastro-input-rua" class="cadastro-input-locale"></td>
+                        <td><input type="text" id="cadastro-input-numero" class="cadastro-input-locale"></td>
+                        
+                    </tr>
+                    <tr class="data-label">
+                        <th class="data-container"><label for="cadastro-input-cidade" class="cadastro-label">Cidade</label></th>
+                        <th class="data-container"><label for="cadastro-input-bairro" class="cadastro-label">Bairro</label></th>
+                        
+                    </tr>
+
+                    <tr class="data-input-2">
+                        <td class="data-container"><input type="text" id="cadastro-input-cidade"  class="cadastro-input-locale"></td>
+                        <td class="data-container"><input type="text" id="cadastro-input-bairro"  class="cadastro-input-locale"></td>
+                        
+                    </tr>
+
+                    <tr>
+                        <th class="data-container"><label for="cadastro-input-uf" class="cadastro-label">UF</label></th>
+                        <th><label for="cadastro-input-complemento" class="cadastro-label">Complemento</label></th>
+                    </tr>
+                    <tr>
+                        <td class="data-container"><input type="text" maxlength="2" id="cadastro-input-uf"  class="cadastro-input-locale"></td>
+                        <td><input type="text" id="cadastro-input-complemento" class="cadastro-input-locale"></td>
+                    </tr>
+                </table>
 
                 <button type="button" class="btn-laranja">Cadastrar-se</button>
             </form> 
