@@ -159,20 +159,21 @@
                 <label for="input-perfil-nome" class="cadastro-label">Nome completo</label>
                 <div class="input-container">
                     <input type="text" name="input-perfil-nome" id="input-perfil-nome" class="cadastro-input" readonly>
-                    <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit" onclick="editarInput()" style="background-color: var(--cor-laranja);">
+                    <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit-nome" class="edit" onclick="editarNome()">
                 </div>
+                <button type="button" class="btn-laranja" id="botao-salvar-nome" onclick="salvarNome()">Salvar</button>
             </div>
             <div class="perfil-info">
-                <label for="" class="cadastro-label">Descrição</label>
+                <label for="perfil-textarea" class="cadastro-label">Descrição</label>
                 <div class="input-container">
-                    <textarea rows="15" id="" class="cadastro-input"></textarea>
-                    <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit" onclick="editarInput()" style="background-color: var(--cor-laranja);">
+                    <textarea rows="15" id="perfil-textarea" class="cadastro-input" readonly></textarea>
+                    <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit-desc" class="edit" onclick="editarDesc()">
                 </div>
+                <button type="button" class="btn-laranja" id="botao-salvar-desc" onclick="salvarDesc()">Salvar</button>
             </div>
             <div class="img-insert">
                 <img src="#" alt="">
             </div>
-
             <div class="adocao">
                 <h3 class="subt-adocao">Gostaria de adotar um animal?</h3>
                 <p>Realize já o formulário de adoção para provar que é apto(a) para adotar e cuidar de um animalzinho!</p>
@@ -187,8 +188,9 @@
                 <label for="input-dados-email" class="cadastro-label">E-mail</label>
                 <div class="input-container">
                     <input type="text" name="input-perfil-email" id="input-perfil-email" class="cadastro-input" readonly>
-                    <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit" onclick="editarInput()" style="background-color: var(--cor-laranja);">
+                    <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit-email" class="edit" onclick="editarEmail()">
                 </div>
+                <button type="button" class="btn-laranja" id="botao-salvar-email" onclick="salvarEmail()">Salvar</button>
             </div>
 
             <div class="dados-info">
@@ -198,18 +200,22 @@
                     <img src="img/vis_on.svg" alt="Mostrar Senha" id="vis-on" onclick="mostrarSenha()" class="vis-on">
                 </div>
 
-                <label for="input-dados-senha" class="cadastro-label">Nova Senha</label>
+                <label for="input-dados-nova-senha" class="cadastro-label">Nova Senha</label>
                 <div class="input-container">
-                    <input type="password" name="input-dados-senha" id="input-dados-senha" class="cadastro-input">
-                    <img src="img/vis_on.svg" alt="Mostrar Senha" id="vis-on" onclick="mostrarSenha()" class="vis-on">
+                    <input type="password" name="input-dados-nova-senha" id="input-dados-nova-senha" class="cadastro-input">
+                    <img src="img/vis_on.svg" alt="Mostrar Senha" id="vis-on-2" onclick="mostrarNovaSenha()" class="vis-on">
                 </div>
 
-                <label for="input-dados-senha" class="cadastro-label">Confirmar Senha</label>
+                <label for="input-dados-conf-senha" class="cadastro-label">Confirmar Senha</label>
                 <div class="input-container">
-                    <input type="password" name="input-dados-senha" id="input-dados-senha" class="cadastro-input">
-                    <img src="img/vis_on.svg" alt="Mostrar Senha" id="vis-on" onclick="mostrarSenha()" class="vis-on">
+                    <input type="password" name="input-dados-conf-senha" id="input-dados-conf-senha" class="cadastro-input">
+                    <img src="img/vis_on.svg" alt="Mostrar Senha" id="vis-on-3" onclick="mostrarConfSenha()" class="vis-on">
                 </div>
-
+                
+                <label for="cep" class="cadastro-label">CEP</label>
+                <div class="input-container">
+                    <input type="text" name="cep" id="cep" class="cadastro-input" maxlength="8">
+                </div>
                 <table>
                     <tr class="data-label">
                         <th colspan="2"><label for="cadastro-input-rua" id="cadastro-input-rua" class="cadastro-label">Rua</label></th>

@@ -131,6 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Mostrar Senha, Nova Senha e Confirmação de Senha
 function mostrarSenha(){
     let senha = document.getElementById('input-dados-senha');
     let imgOlho = document.getElementById('vis-on');
@@ -143,4 +144,78 @@ function mostrarSenha(){
         senha.type = 'password';
         imgOlho.src = 'img/vis_on.svg'
     }
+}
+
+function mostrarNovaSenha(){
+    let novaSenha = document.getElementById('input-dados-nova-senha');
+    let imgOlho2 = document.getElementById('vis-on-2');
+
+    if(novaSenha.type === 'password'){
+        novaSenha.type = 'text';
+        imgOlho2.src = 'img/vis_off.svg'
+    }
+    else{
+        novaSenha.type = 'password';
+        imgOlho2.src = 'img/vis_on.svg'
+    }
+}
+
+function mostrarConfSenha(){
+    let confirmarSenha = document.getElementById('input-dados-conf-senha');    
+    let imgOlho3 = document.getElementById('vis-on-3');
+
+    if(confirmarSenha.type === 'password'){
+        confirmarSenha.type = 'text';
+        imgOlho3.src = 'img/vis_off.svg'
+    }
+    else{
+        confirmarSenha.type = 'password';
+        imgOlho3.src = 'img/vis_on.svg'
+    }
+}
+
+// Editar Nome, Descrição e E-mail
+let nome = document.getElementById('input-perfil-nome');
+let desc = document.getElementById('perfil-textarea');
+let email = document.getElementById('input-perfil-email');
+function editarNome(){
+    let botaoSalvar = document.getElementById('botao-salvar-nome');
+
+    if(nome.readOnly === true){
+        nome.readOnly = false;
+        botaoSalvar.style.display = "block";
+        botaoSalvar.style.textAlign = "center";
+    }   
+}
+function salvarNome(){
+    if(nome.value == 0)
+        alert('Insira um nome válido!')
+}
+
+function editarDesc(){
+    let botaoSalvar = document.getElementById('botao-salvar-desc');
+
+    if(desc.readOnly === true){
+        desc.readOnly = false;
+        botaoSalvar.style.display = "block";
+        botaoSalvar.style.textAlign = "center";
+    }   
+}
+function salvarDesc(){
+    if(desc.value == 0)
+        alert('Insira uma descrição válida!')
+}
+
+function editarEmail(){
+    let botaoSalvar = document.getElementById('botao-salvar-email');
+
+    if(email.readOnly === true){
+        email.readOnly = false;
+        botaoSalvar.style.display = "block";
+        botaoSalvar.style.textAlign = "center";
+    }   
+}
+function salvarEmail(){
+    if(email.value == 0)
+        alert('Insira um e-mail válido!')
 }

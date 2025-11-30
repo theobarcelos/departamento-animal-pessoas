@@ -628,6 +628,19 @@ label{
     width: 50%;
 }
 
+.dados-pessoais{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0px 40px 40px 40px ;
+    background-color: var(--cor-branco);
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 1px 1px 10px 1px #00000050;
+    border-radius: 24px;
+    width: 50%;
+}
+
 .cadastro-input{
     border: 2px solid #ccc;
     padding: 15px 15px 15px 10px;
@@ -642,17 +655,53 @@ label{
     transition: 0.85s ease;
 }
 
-.dados-pessoais{
+.input-container{
     display: flex;
-    flex-direction: column;
+}
+
+.vis-on{
+    background-color: var(--cor-laranja);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    height: 50%;
     align-self: center;
-    margin: 0px 40px 40px 40px ;
-    background-color: var(--cor-branco);
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-shadow: 1px 1px 10px 1px #00000050;
-    border-radius: 24px;
+}
+
+.vis-on:hover{
+    cursor: pointer;
+    background-color: #fa8108c7;
+    transition: 0.85s ease;
+}
+
+.edit{
+    border-radius: 10px;
+    background-color: var(--cor-laranja);
+    transition: 0.85s ease;
+    height: fit-content;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.edit:hover{
+    cursor: pointer;
+    background-color: #fa8108c7;
+    transition: 0.85s ease;
+}
+
+#input-dados-senha, #input-dados-nova-senha, #input-dados-conf-senha{
+    width: 40%;
+}
+
+#botao-salvar-nome, #botao-salvar-desc, #botao-salvar-email{
+    display: none;
     width: 50%;
+    justify-self: center;
+    margin-top: 10px;
+} 
+
+#cep{
+    width: 40%;
 }
 
 td{
@@ -681,20 +730,3 @@ td{
 #cadastro-input-complemento{
     width: 94%;
 } 
-
-.input-container{
-    display: flex;
-}
-
-.vis-on{
-    background-color: var(--cor-laranja);
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 10px;
-    height: 50%;
-    align-self: center;
-}
-
-#input-dados-senha{
-    width: 40%;
-}
