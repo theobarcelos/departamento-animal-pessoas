@@ -130,3 +130,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+function mostrarSenha(){
+    let senha = document.getElementById('input-dados-senha');
+    let imgOlho = document.getElementById('vis-on');
+
+    if(senha.type === 'password'){
+        senha.type = 'text';
+        imgOlho.src = 'img/vis_off.svg'
+    }
+    else{
+        senha.type = 'password';
+        imgOlho.src = 'img/vis_on.svg'
+    }
+}
