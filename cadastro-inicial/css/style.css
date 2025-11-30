@@ -485,6 +485,7 @@ a {
     border: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: background 0.3s;
+    width: 100%;
 }
 
 .btn-laranja:hover {
@@ -1100,14 +1101,14 @@ label{
 .pf-container{
     display: flex;
     flex-direction: column;
-    gap: 17px;
+    gap: 20px;
     margin-bottom: 20px;
 }
 
 .pj-container{
     display: none;
     flex-direction: column;
-    gap: 17px;
+    gap: 20px;
     margin-bottom: 20px;
 }
 
@@ -1135,10 +1136,8 @@ label{
     width: 40%;
 }
 
-
-
-table{
-    margin-bottom: 20px;
+td{
+    padding: 0px 10px 20px 0px;
 }
 
 .cadastro-input-locale{

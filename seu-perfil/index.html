@@ -150,8 +150,65 @@
         </div>
     </aside>
 
-    <main class="corpo">
-        
+    <main class="seu-perfil">
+            <h1 class="title">Seu Perfil</h1>
+            <section class="perfil">
+                <h1 class="title">Perfil</h1>
+                
+                <div class="perfil-info">
+                    <label for="input-perfil-nome" class="cadastro-label">Nome completo</label>
+                    <div class="input-container">
+                        <input type="text" name="input-perfil-nome" id="input-perfil-nome" class="cadastro-input" readonly>
+                        <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit" onclick="editarInput()" style="background-color: var(--cor-laranja);">
+                    </div>
+                </div>
+                <div class="perfil-info">
+                    <label for="" class="cadastro-label">Descrição</label>
+                    <div class="input-container">
+                        <textarea rows="15" id=""></textarea>
+                        <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit" onclick="editarInput()" style="background-color: var(--cor-laranja);">
+                    </div>
+                </div>
+                <div class="img-insert">
+                    <img src="#" alt="">
+                </div>
+
+                <div class="adocao">
+                    <h3 class="subt-adocao">Gostaria de adotar um animal?</h3>
+                    <p>Realize já o formulário de adoção para provar que é apto(a) para adotar e cuidar de um animalzinho!</p>
+                    <button type="button" class="btn-laranja">Responder</button>
+                </div>
+            </section>
+
+            <section class="dados-pessoais">
+                <h1 class="title">Dados pessoais</h1>
+
+                <div class="dados-info">
+                    <label for="input-dados-email" class="cadastro-label">E-mail</label>
+                    <div class="input-container">
+                        <input type="text" name="input-perfil-email" id="input-perfil-email" class="cadastro-input" readonly>
+                        <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit" onclick="editarInput()" style="background-color: var(--cor-laranja);">
+                    </div>
+                </div>
+
+                <div class="dados-info">
+                    <label for="input-dados-senha" class="cadastro-label">Senha</label>
+                    <div class="input-container">
+                        <input type="password" name="input-perfil-nome" id="input-perfil-nome" class="cadastro-input">
+                        <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit" onclick="editarInput()" style="background-color: var(--cor-laranja);">
+                    </div>
+                    <label for="input-dados-nova-senha" class="cadastro-label">Nova Senha</label>
+                    <div class="input-container">
+                        <input type="password" name="input-perfil-nome" id="input-perfil-nome" class="cadastro-input">
+                        <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit" onclick="editarInput()" style="background-color: var(--cor-laranja);">
+                    </div>
+                    <label for="" class="cadastro-label">Confirmar Senha</label>
+                    <div class="input-container">
+                        <input type="password" name="input-perfil-nome" id="input-perfil-nome" class="cadastro-input">
+                        <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit" onclick="editarInput()" style="background-color: var(--cor-laranja);">
+                    </div>
+                </div>
+            </section>
     </main>
 
     <!-- Rodapé -->
