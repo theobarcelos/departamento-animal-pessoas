@@ -675,6 +675,16 @@ label{
     align-self: center;
 }
 
+.edit-perfil{
+    color: var(--cor-verde-agua);
+    font-size: 20px;
+}
+
+.edit-perfil:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .lado-direito{
     display: flex;
     flex-direction: column;
