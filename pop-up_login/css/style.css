@@ -394,10 +394,12 @@ label, p, a{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
     background-color: var(--cor-branco);
     min-width: 50%;
     border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 10px 1px #00000050;
+    margin: 20px 0px 20px 0px;
 }
 
 .title-container{
@@ -481,6 +483,10 @@ label, p, a{
     color: var(--cor-branco);
 }
 
+#btn-login{
+    width: 100%;
+}
+
 .esq-senha-container{
     display: flex;
     flex-wrap: wrap;
@@ -491,6 +497,14 @@ label, p, a{
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+.link-login{
+    color: blue;
+}
+
+.link-login:hover{
+    text-decoration: underline;
 }
 
 /* VLibras - Posicionamento e tamanho do botão */
