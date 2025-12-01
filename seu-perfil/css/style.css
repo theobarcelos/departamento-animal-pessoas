@@ -657,7 +657,6 @@ label{
 .perfil-info{
     display: flex;
     flex-direction: column;
-    /* width: 50%; */
 }
 
 .dados-info{
