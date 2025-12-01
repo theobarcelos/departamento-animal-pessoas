@@ -155,7 +155,7 @@
         <section class="perfil">
             <h1 class="title">Perfil</h1>
             
-            <div class="perfil-info">
+            <div class="perfil-info" id="info-nome">
                 <label for="input-perfil-nome" class="cadastro-label">Nome completo</label>
                 <div class="input-container">
                     <input type="text" name="input-perfil-nome" id="input-perfil-nome" class="cadastro-input" readonly>
@@ -163,21 +163,24 @@
                 </div>
                 <button type="button" class="btn-laranja" id="botao-salvar-nome" onclick="salvarNome()">Salvar</button>
             </div>
-            <div class="perfil-info">
-                <label for="perfil-textarea" class="cadastro-label">Descrição</label>
+            <div class="perfil-info" id="info-desc">
+                <label for="perfil-textarea-desc" class="cadastro-label">Descrição</label>
                 <div class="input-container">
-                    <textarea rows="15" id="perfil-textarea" class="cadastro-input" readonly></textarea>
+                    <textarea rows="15" id="perfil-textarea-desc" class="cadastro-input" readonly></textarea>
                     <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit-desc" class="edit" onclick="editarDesc()">
                 </div>
                 <button type="button" class="btn-laranja" id="botao-salvar-desc" onclick="salvarDesc()">Salvar</button>
             </div>
-            <div class="img-insert">
-                <img src="#" alt="">
-            </div>
-            <div class="adocao">
-                <h3 class="subt-adocao">Gostaria de adotar um animal?</h3>
-                <p>Realize já o formulário de adoção para provar que é apto(a) para adotar e cuidar de um animalzinho!</p>
-                <button type="button" class="btn-laranja">Responder</button>
+            <div class="lado-esquerdo">
+                <div class="perfil-info" id="info-img">
+                    <img src="img/mulher-de-foto-completa-com-cachorro-em-estudio_23-2150747614.avif" alt="Foto de Perfil" class="foto-perfil">
+                    <a href="#">Foto de Perfil</a>
+                </div>
+                <div class="perfil-info" id="info-adocao">
+                    <h3 class="subt-adocao">Gostaria de adotar um animal?</h3>
+                    <p>Realize já o formulário de adoção para provar que é apto(a) para adotar e cuidar de um animalzinho!</p>
+                    <button type="button" class="btn-laranja" id="botao-responder">Responder</button>
+                </div>
             </div>
         </section>
 
@@ -193,7 +196,7 @@
                 <button type="button" class="btn-laranja" id="botao-salvar-email" onclick="salvarEmail()">Salvar</button>
             </div>
 
-            <div class="dados-info">
+            <div class="dados-info" id="info-senha">
                 <label for="input-dados-senha" class="cadastro-label">Senha</label>
                 <div class="input-container">
                     <input type="password" name="input-dados-senha" id="input-dados-senha" class="cadastro-input">
@@ -211,70 +214,71 @@
                     <input type="password" name="input-dados-conf-senha" id="input-dados-conf-senha" class="cadastro-input">
                     <img src="img/vis_on.svg" alt="Mostrar Senha" id="vis-on-3" onclick="mostrarConfSenha()" class="vis-on">
                 </div>
-                
+            </div>
+            <div class="dados-info" id="info-cep">
                 <label for="cep" class="cadastro-label">CEP</label>
                 <div class="input-container">
                     <input type="text" name="cep" id="cep" class="cadastro-input" maxlength="8">
                 </div>
-                <table>
-                    <tr class="data-label">
-                        <th colspan="2"><label for="cadastro-input-rua" id="cadastro-input-rua" class="cadastro-label">Rua</label></th>
-                        <th><label for="cadastro-input-numero" class="cadastro-label">Número</label></th>
-                    </tr>
-                    <tr class="data-input">
-                        <td colspan="2"><input type="text" id="cadastro-input-rua" class="cadastro-input-locale"></td>
-                        <td><input type="text" id="cadastro-input-numero" class="cadastro-input-locale"></td>
-                    </tr>
-                    <tr class="data-label">
-                        <th class="data-container"><label for="cadastro-input-cidade" class="cadastro-label">Cidade</label></th>
-                        <th class="data-container"><label for="cadastro-input-bairro" class="cadastro-label">Bairro</label></th>
-                        <th class="data-container"><label for="cadastro-input-uf" class="cadastro-label">UF</label></th>
-                    </tr>
-
-                    <tr class="data-input">
-                        <td class="data-container"><input type="text" id="cadastro-input-cidade"  class="cadastro-input-locale"></td>
-                        <td class="data-container"><input type="text" id="cadastro-input-bairro"  class="cadastro-input-locale"></td>
-                        <td class="data-container">
-                            <select type="text" id="cadastro-input-uf"  class="cadastro-input-locale">
-                                <option value="acre">AC</option>
-                                <option value="alagoas">AL</option>
-                                <option value="amazonas">AM</option>
-                                <option value="bahia">BA</option>
-                                <option value="ceara">CE</option>
-                                <option value="distrito-federal">DF</option>
-                                <option value="espirito-santo">ES</option>
-                                <option value="goias">GO</option>
-                                <option value="maranhao">MA</option>
-                                <option value="mato-grosso">MT</option>
-                                <option value="mato-grosso-sul">MS</option>
-                                <option value="minas-gerais">MG</option>
-                                <option value="para">PA</option>
-                                <option value="paraiba">PB</option>
-                                <option value="parana">PR</option>
-                                <option value="pernambuco">PE</option>
-                                <option value="piaui">PI</option>
-                                <option value="rio-de-janeiro">RJ</option>
-                                <option value="rio-grande-norte">RN</option>
-                                <option value="rio-grande-sul">RS</option>
-                                <option value="rondonia">RO</option>
-                                <option value="roraima">RR</option>
-                                <option value="santa-catarina">SC</option>
-                                <option value="sao-paulo">SP</option>
-                                <option value="sergipe">SE</option>
-                                <option value="tocantins">TO</option>
-                            </select>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <th colspan="3"><label for="cadastro-input-complemento" class="cadastro-label">Complemento</label></th>
-                    </tr>
-                    <tr>
-                        
-                        <td colspan="3"><input type="text" id="cadastro-input-complemento" class="cadastro-input-locale"></td>
-                    </tr>
-                </table> 
             </div>
+            <table>
+                <tr class="data-label">
+                    <th colspan="2"><label for="cadastro-input-rua" id="cadastro-input-rua" class="cadastro-label">Rua</label></th>
+                    <th><label for="cadastro-input-numero" class="cadastro-label">Número</label></th>
+                </tr>
+                <tr class="data-input">
+                    <td colspan="2"><input type="text" id="cadastro-input-rua" class="cadastro-input-locale"></td>
+                    <td><input type="text" id="cadastro-input-numero" class="cadastro-input-locale"></td>
+                </tr>
+                <tr class="data-label">
+                    <th class="data-container"><label for="cadastro-input-cidade" class="cadastro-label">Cidade</label></th>
+                    <th class="data-container"><label for="cadastro-input-bairro" class="cadastro-label">Bairro</label></th>
+                    <th class="data-container"><label for="cadastro-input-uf" class="cadastro-label">UF</label></th>
+                </tr>
+
+                <tr class="data-input">
+                    <td class="data-container"><input type="text" id="cadastro-input-cidade"  class="cadastro-input-locale"></td>
+                    <td class="data-container"><input type="text" id="cadastro-input-bairro"  class="cadastro-input-locale"></td>
+                    <td class="data-container">
+                        <select type="text" id="cadastro-input-uf"  class="cadastro-input-locale">
+                            <option value="acre">AC</option>
+                            <option value="alagoas">AL</option>
+                            <option value="amazonas">AM</option>
+                            <option value="bahia">BA</option>
+                            <option value="ceara">CE</option>
+                            <option value="distrito-federal">DF</option>
+                            <option value="espirito-santo">ES</option>
+                            <option value="goias">GO</option>
+                            <option value="maranhao">MA</option>
+                            <option value="mato-grosso">MT</option>
+                            <option value="mato-grosso-sul">MS</option>
+                            <option value="minas-gerais">MG</option>
+                            <option value="para">PA</option>
+                            <option value="paraiba">PB</option>
+                            <option value="parana">PR</option>
+                            <option value="pernambuco">PE</option>
+                            <option value="piaui">PI</option>
+                            <option value="rio-de-janeiro">RJ</option>
+                            <option value="rio-grande-norte">RN</option>
+                            <option value="rio-grande-sul">RS</option>
+                            <option value="rondonia">RO</option>
+                            <option value="roraima">RR</option>
+                            <option value="santa-catarina">SC</option>
+                            <option value="sao-paulo">SP</option>
+                            <option value="sergipe">SE</option>
+                            <option value="tocantins">TO</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="3"><label for="cadastro-input-complemento" class="cadastro-label">Complemento</label></th>
+                </tr>
+                <tr>
+                    
+                    <td colspan="3"><input type="text" id="cadastro-input-complemento" class="cadastro-input-locale"></td>
+                </tr>
+            </table> 
         </section>
     </main>
 

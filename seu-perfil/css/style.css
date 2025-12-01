@@ -625,7 +625,7 @@ label{
     padding: 20px;
     box-shadow: 1px 1px 10px 1px #00000050;
     border-radius: 24px;
-    width: 50%;
+    width: 80%;
 }
 
 .dados-pessoais{
@@ -638,7 +638,7 @@ label{
     padding: 20px;
     box-shadow: 1px 1px 10px 1px #00000050;
     border-radius: 24px;
-    width: 50%;
+    width: 80%;
 }
 
 .cadastro-input{
@@ -655,8 +655,39 @@ label{
     transition: 0.85s ease;
 }
 
+.perfil-info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.dados-info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
 .input-container{
     display: flex;
+}
+
+.lado-esquerdo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#info-img, #info-adocao{
+    align-items: center;
+}
+
+#botao-responder{
+    width: 30%;
+}
+
+.foto-perfil{
+    width: 40%;
+    border-radius: 45%;
 }
 
 .vis-on{
@@ -689,23 +720,27 @@ label{
     transition: 0.85s ease;
 }
 
-#input-dados-senha, #input-dados-nova-senha, #input-dados-conf-senha{
-    width: 40%;
+#info-senha{
+    margin: 40px 0px 40px 0px;
 }
 
 #botao-salvar-nome, #botao-salvar-desc, #botao-salvar-email{
     display: none;
     width: 50%;
     justify-self: center;
-    margin-top: 10px;
-} 
+    margin: 20px 0px 20px 0px;
+}
 
-#cep{
-    width: 40%;
+#info-cep{
+    margin-bottom: 20px;
 }
 
 td{
     padding: 0px 10px 20px 0px;
+}
+
+#cep{
+    width: 93%;
 }
 
 .cadastro-input-locale{
