@@ -176,7 +176,7 @@ function mostrarConfSenha(){
 
 // Editar Nome, Descrição e E-mail
 let nome = document.getElementById('input-perfil-nome');
-let desc = document.getElementById('perfil-textarea');
+let desc = document.getElementById('perfil-textarea-desc');
 let email = document.getElementById('input-perfil-email');
 function editarNome(){
     let botaoSalvar = document.getElementById('botao-salvar-nome');

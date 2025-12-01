@@ -617,7 +617,6 @@ label{
 
 .perfil{
     display: flex;
-    flex-direction: column;
     align-self: center;
     margin: 0px 40px 40px 40px ;
     background-color: var(--cor-branco);
@@ -658,7 +657,7 @@ label{
 .perfil-info{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .dados-info{
@@ -669,16 +668,33 @@ label{
 
 .input-container{
     display: flex;
+    align-items: center;
+}
+
+#botao-salvar-nome, #botao-salvar-desc, #botao-salvar-email{
+    align-self: center;
+}
+
+.lado-direito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
 }
 
 .lado-esquerdo{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    width: 50%;
 }
 
 #info-img, #info-adocao{
     align-items: center;
+}
+
+.p-adocao{
+    width: 50%;
 }
 
 #botao-responder{
@@ -686,8 +702,9 @@ label{
 }
 
 .foto-perfil{
-    width: 40%;
-    border-radius: 45%;
+    width: 350px;
+    border-radius: 50%;
+    height: 350px;
 }
 
 .vis-on{
