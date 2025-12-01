@@ -586,7 +586,7 @@ div[vw-access-button] img {
     }
 }
 
-h1, h2, label{
+.title, label{
     color: var(--cor-verde-agua);
 }
 
