@@ -1,4 +1,3 @@
-/* Variáveis de Cores */
 :root {
     --cor-verde-agua: #348888;
     --cor-verde-agua-claro: #d5f1ef;
@@ -253,7 +252,7 @@ a {
     position: fixed;
     top: 0;
     left: 0;
-    width: 320px;
+    width: 380px;
     max-width: 85%;
     height: 100vh;
     background: #fbf9f7;
@@ -327,16 +326,31 @@ a {
 }
 
 .secao-menu {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.75rem;
 }
 
 .titulo-secao-menu {
     text-align: center;
     color: var(--cor-verde-agua);
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
     padding: 0;
+}
+
+.secao-menu span, .secao-menu h1 {
+    text-align: center;
+    color: var(--cor-verde-agua);
+    font-size: 2.25rem;
+    font-weight: 600;
+	line-height: 1;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.sesao-menu .material-symbols-rounded {
+    font-size: 54px;
+    line-height: 1;
 }
 
 .lista-menu {
@@ -357,7 +371,7 @@ a {
     font-weight: 500;
     font-size: 0.95rem;
     display: block;
-    padding: 0.5rem 0;
+    padding: 0.4rem 0;
     text-align: center;
     transition: color 0.3s;
 }
