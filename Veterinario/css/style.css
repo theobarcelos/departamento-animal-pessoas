@@ -1193,9 +1193,23 @@ div[vw-access-button] img {
 }
 .Cont-itens{
     display: flex;
+    flex-direction: row;
     width: 90%;
     background-color: var(--cor-branco);
     padding: 1em;
     margin: 1em;
     border-radius: 5px;
+}
+.Cont-itens img{
+    width: 10vw;
+    height: auto;
+    margin: 0.2em;
+
+}
+.Cont-itens label{
+    color: var(--cor-verde-petroleo);
+    font-weight: bold;
+}
+.Itens-cima{
+    display: flex;
 }
