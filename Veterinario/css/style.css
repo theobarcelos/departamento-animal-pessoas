@@ -1124,4 +1124,37 @@ div[vw-access-button] img {
 }
 .Topico-menu{
     list-style: none;
+    margin: 1em 0;
+    margin-bottom: 0.1em;
+    padding: 0.4em 1em;
+    border: solid var(--cor-ciano-medio);
+    border-radius: 10px;
+}
+.Cont-menu{
+    background-color: var(--cor-ciano-medio);
+    margin: 0.5em;
+    margin-top: -2px;
+    border: solid var(--cor-ciano-medio) 1px;
+    border-radius: 0px 0px 20px 20px;
+}
+.Cont-menu li{
+    list-style: none;
+    color: var(--cor-branco);
+    margin: 0.2em;
+}
+.Sair{
+    list-style: none;
+    margin: 1em 0;
+    margin-bottom: 0.1em;
+    padding: 0.4em 1em;
+    background-color: var(--cor-laranja);
+    border: solid var(--cor-laranja);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--cor-branco);
+}
+.Sair:hover{
+    background-color: var(--cor-laranja-avermelhado);
+    border: solid var(--cor-laranja-avermelhado);
+
 }
