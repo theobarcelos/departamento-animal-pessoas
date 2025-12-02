@@ -863,6 +863,7 @@ label{
     display: flex;
     flex-direction: column;
     width: 50%;
+    gap: 20px;
 }
 
 #info-img, #info-adocao{
@@ -954,3 +955,54 @@ td{
 #cadastro-input-complemento{
     width: 94%;
 } 
+
+#info-animal-fav{
+    gap: 20px;
+}
+
+#animal-fav{
+    width: 94%;
+}
+
+.input-oculto{
+    display: flex;
+}
+
+.btn-cancelar{
+    border-radius: 10px;
+    background-color: var(--cor-laranja-avermelhado);
+    transition: 0.85s ease;
+    height: fit-content;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.btn-cancelar:hover{
+    cursor: pointer;
+    background-color: #f244058a;
+    transition: 0.85s ease;
+}
+
+#botao-salvar-animal-fav{
+    width: 50%;
+    align-self: center;
+}
+
+.oculto{
+    display: none;
+}
+
+.icon{
+    background-color: var(--cor-laranja);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    height: 50%;
+    align-self: center;
+}
+
+.icon:hover{
+    cursor: pointer;
+    background-color: #fa8108c7;
+    transition: 0.85s ease;
+}

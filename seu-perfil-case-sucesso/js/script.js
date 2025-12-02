@@ -186,11 +186,11 @@ function editarNome(){
         botaoSalvar.style.display = "block";
         botaoSalvar.style.textAlign = "center";
     }   
-}
+};
 function salvarNome(){
     if(nome.value == 0)
         alert('Insira um nome válido!')
-}
+};
 
 function editarDesc(){
     let botaoSalvar = document.getElementById('botao-salvar-desc');
@@ -200,11 +200,11 @@ function editarDesc(){
         botaoSalvar.style.display = "block";
         botaoSalvar.style.textAlign = "center";
     }   
-}
+};
 function salvarDesc(){
     if(desc.value == 0)
         alert('Insira uma descrição válida!')
-}
+};
 
 function editarEmail(){
     let botaoSalvar = document.getElementById('botao-salvar-email');
@@ -214,11 +214,11 @@ function editarEmail(){
         botaoSalvar.style.display = "block";
         botaoSalvar.style.textAlign = "center";
     }   
-}
+};
 function salvarEmail(){
     if(email.value == 0)
         alert('Insira um e-mail válido!')
-}
+};
 
 const selectAnimal = document.getElementById('animal-fav');
 const inputOculto = document.getElementById('input-oculto');
@@ -248,7 +248,7 @@ btnCancelar.addEventListener('click', function(){
     selectAnimal.classList.remove('oculto');
     selectAnimal.value = '';
     selectAnimal.setAttribute('name', 'animal-fav');
-})
+});
 
 async function pesquisarCEP(){
     let cep = document.getElementById('cep').value;
