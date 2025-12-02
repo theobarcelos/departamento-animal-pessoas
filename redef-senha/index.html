@@ -190,31 +190,30 @@
     <section class="form-login">
         <form class="login">
             <div class="title-container">
-                <h1 class="title-login">Esqueceu sua senha?</h1>
+                <h1 class="title-login">Bem-vindo(a)!</h1>
             </div>
-            <div class="redef-senha-text">
-                <p>Para redefinir sua senha, insira o <span class="span-text">e-mail</span> ou <br><span class="span-text">número de telefone</span> cadastrado(s)</p>
+            <div class="logo-container">
+                <img src="img/logo_Bem-EstarAnimal.png" alt="Logotipo Departamento do Bem-Estar Animal" class="logo">
             </div>
-            <div class="tab-button">
-                <button type="button" class="btn-laranja" id="button-email">E-mail</button>
-                <button type="button" class="btn-claro" id="button-sms">SMS</button>
+            <div class="inputs-container">
+                <label for="identificador" class="label-login">Email / CPF / CNPJ</label>
+                <input type="text" name="identificador" id="identificador" class="input-login" placeholder=" ">
             </div>
-            
-            <div class="inputs-container" id="container-email">
-                <label for="email" class="label-login">E-mail</label>
-                <input type="text" name="email" id="email" class="input-login">
-            </div>
-            <div class="inputs-container oculto" id="container-sms">
-                <label for="sms" class="label-login">Número de Telefone</label>
-                <input type="text" name="sms" id="sms" class="input-login">
-            </div>
-            <div class="explain-redef-senha-container">
-                <p class="explain-redef-senha">Enviaremos um link em seu E-mail ou SMS, para que você possa redefinir a sua senha!</p>
+            <div class="inputs-container">
+                <label for="senha" class="label-login">Senha</label>
+                <div class="inserir-senha-container">
+                    <input type="password" name="senha" maxlength="36" id="senha" class="input-login" placeholder=" ">
+                    <img src="img/vis_on.svg" alt="" id="vis_on" onclick="mostrarSenha()">
+                </div>
             </div>
             <div class="button-container">
-                <a href="../redef-senha/index.html">
-                    <button type="submit" class="btn-laranja" id="btn-login">Enviar link</button>
-                </a>
+                <button type="submit" class="btn-laranja" id="btn-login">Fazer Login</button>
+            </div>
+            <div class="esq-senha-container">
+                <a href="#" class="link-login">Esqueceu sua senha?</a>
+            </div>
+            <div class="cadastro-container">
+                <p class="cadastro">Ainda não possui uma conta? <a href="../cadastro-inicial/index.html" class="link-login">Cadastrar-se</a></p>
             </div>
         </form>
     </section>
