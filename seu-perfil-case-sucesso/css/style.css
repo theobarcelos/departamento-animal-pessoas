@@ -1034,3 +1034,7 @@ td{
     background-color: #fa8108c7;
     transition: 0.85s ease;
 }
+
+#textarea-case-sucesso{
+    font-size: 20px;
+}
