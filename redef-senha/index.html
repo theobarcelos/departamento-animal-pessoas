@@ -69,10 +69,10 @@
                         <a href="#" class="link-nav">Banco de Ração</a>
                         <a href="#" class="link-nav">Educação</a>
                         <a href="#" class="link-nav">Castração</a>
-                        <a href="#" class="link-nav">Entrar</a>
+                        <a href="../pop-up_login/index.html" class="link-nav">Entrar</a>
                     </div>
                 </div>
-                <div class="d-flex align-items-center gap-2">
+                <div class="d-flex align-items-center gap-2">   
                     <a href="#" class="icone-social" aria-label="E-mail">
                         <span class="material-symbols-rounded">mail</span>
                     </a>
@@ -190,30 +190,27 @@
     <section class="form-login">
         <form class="login">
             <div class="title-container">
-                <h1 class="title-login">Bem-vindo(a)!</h1>
+                <h1 class="title-login">Redefinir Senha</h1>
             </div>
             <div class="logo-container">
-                <img src="img/logo_Bem-EstarAnimal.png" alt="Logotipo Departamento do Bem-Estar Animal" class="logo">
+                <img src="img/logo_Bem-EstarAnimal.png" alt="Logotipo Departamento do Bem-Estar Animal" class="logo-form">
             </div>
             <div class="inputs-container">
-                <label for="identificador" class="label-login">Email / CPF / CNPJ</label>
-                <input type="text" name="identificador" id="identificador" class="input-login" placeholder=" ">
-            </div>
-            <div class="inputs-container">
-                <label for="senha" class="label-login">Senha</label>
+                <label for="nova-senha" class="label-login">Nova Senha</label>
                 <div class="inserir-senha-container">
-                    <input type="password" name="senha" maxlength="36" id="senha" class="input-login" placeholder=" ">
-                    <img src="img/vis_on.svg" alt="" id="vis_on" onclick="mostrarSenha()">
+                    <input type="password" name="nova-senha" id="nova-senha" class="input-login">
+                    <img src="img/vis_on.svg" alt="" class="vis-on" id="vis_on-1" onclick="mostrarNovaSenha()">
+                </div>
+            </div>
+            <div class="inputs-container">
+                <label for="conf-senha" class="label-login">Confirmar Senha</label>
+                <div class="inserir-senha-container">
+                    <input type="password" name="conf-senha" id="conf-senha" class="input-login">
+                    <img src="img/vis_on.svg" alt="" class="vis-on" id="vis_on-2" onclick="mostrarConfSenha()">
                 </div>
             </div>
             <div class="button-container">
-                <button type="submit" class="btn-laranja" id="btn-login">Fazer Login</button>
-            </div>
-            <div class="esq-senha-container">
-                <a href="#" class="link-login">Esqueceu sua senha?</a>
-            </div>
-            <div class="cadastro-container">
-                <p class="cadastro">Ainda não possui uma conta? <a href="../cadastro-inicial/index.html" class="link-login">Cadastrar-se</a></p>
+                <button type="submit" class="btn-laranja" id="btn-login">Redefinir Senha</button>
             </div>
         </form>
     </section>

@@ -131,9 +131,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function mostrarSenha(){
-    let senha = document.getElementById('senha');
-    let imgOlho = document.getElementById('vis_on');
+function mostrarNovaSenha(){
+    let senha = document.getElementById('nova-senha');
+    let imgOlho = document.getElementById('vis_on-1');
+
+    if(senha.type === 'password'){
+        senha.type = 'text';
+        imgOlho.src = 'img/vis_off.svg'
+    }
+    else{
+        senha.type = 'password';
+        imgOlho.src = 'img/vis_on.svg'
+    }
+}
+function mostrarConfSenha(){
+    let senha = document.getElementById('conf-senha');
+    let imgOlho = document.getElementById('vis_on-2');
 
     if(senha.type === 'password'){
         senha.type = 'text';
