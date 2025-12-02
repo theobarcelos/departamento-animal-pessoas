@@ -131,7 +131,20 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function mostrarSenha(){
+function mostrarNovaSenha(){
+    let senha = document.getElementById('senha');
+    let imgOlho = document.getElementById('vis_on');
+
+    if(senha.type === 'password'){
+        senha.type = 'text';
+        imgOlho.src = 'img/vis_off.svg'
+    }
+    else{
+        senha.type = 'password';
+        imgOlho.src = 'img/vis_on.svg'
+    }
+}
+function mostrarConfSenha(){
     let senha = document.getElementById('senha');
     let imgOlho = document.getElementById('vis_on');
 

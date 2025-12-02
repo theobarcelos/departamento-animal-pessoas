@@ -196,14 +196,17 @@
                 <img src="img/logo_Bem-EstarAnimal.png" alt="Logotipo Departamento do Bem-Estar Animal" class="logo">
             </div>
             <div class="inputs-container">
-                <label for="identificador" class="label-login">Email / CPF / CNPJ</label>
-                <input type="text" name="identificador" id="identificador" class="input-login" placeholder=" ">
+                <label for="identificador" class="label-login">Nova Senha</label>
+                <div class="inserir-senha-container">
+                    <input type="text" name="identificador" id="identificador" class="input-login" placeholder=" ">
+                    <img src="img/vis_on.svg" alt="" id="vis_on" onclick="mostrarNovaSenha()">
+                </div>
             </div>
             <div class="inputs-container">
-                <label for="senha" class="label-login">Senha</label>
+                <label for="senha" class="label-login">Confirmar Senha</label>
                 <div class="inserir-senha-container">
                     <input type="password" name="senha" maxlength="36" id="senha" class="input-login" placeholder=" ">
-                    <img src="img/vis_on.svg" alt="" id="vis_on" onclick="mostrarSenha()">
+                    <img src="img/vis_on.svg" alt="" id="vis_on" onclick="mostrarConfSenha()">
                 </div>
             </div>
             <div class="button-container">
