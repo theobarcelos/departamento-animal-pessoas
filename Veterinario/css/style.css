@@ -1162,6 +1162,40 @@ div[vw-access-button] img {
 
 }
 .Noti-Menu{
-    
-    border:solid var(--cor-escuro) 2px;
+    padding: 1em;
+    padding-left: 0.5em;
+
+}
+.titulo-principal{
+    display: flex;
+    flex-direction: column;
+    color: var(--cor-verde-agua);
+    align-items: center;
+    justify-items: center;
+}
+.Cont-Section{
+    display: flex;
+    padding: 1em;
+    background-color: var(--cor-verde-petroleo);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Barra-Pesq{
+    display: flex;
+    width: 90%;
+    background-color: var(--cor-branco);
+    padding: 1em;
+    border-radius: 5px;
+}
+.Pesq{
+    width: 35px;
+}
+.Cont-itens{
+    display: flex;
+    width: 90%;
+    background-color: var(--cor-branco);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 5px;
 }
