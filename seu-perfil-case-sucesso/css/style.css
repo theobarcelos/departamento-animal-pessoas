@@ -864,6 +864,7 @@ label{
     display: flex;
     flex-direction: column;
     width: 50%;
+    justify-content: space-between;
 }
 
 #info-img, #info-adocao{
@@ -889,7 +890,7 @@ label{
 }
 
 .img-animal{
-    width: 80%;
+    width: 60%;
     border-radius: 50%;
 }
 
