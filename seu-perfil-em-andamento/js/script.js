@@ -219,3 +219,49 @@ function salvarEmail(){
     if(email.value == 0)
         alert('Insira um e-mail válido!')
 }
+
+const selectAnimal = document.getElementById('animal-fav');
+const inputOculto = document.getElementById('input-oculto');
+const inputAnimal = document.getElementById('input-perfil-animal-fav');
+const btnCancelar = document.getElementById('btn-cancelar-outro');
+
+selectAnimal.addEventListener('change', function(){
+    if(this.value === "outro"){
+        this.classList.add('oculto');
+        this.removeAttribute('name');
+
+        inputOculto.classList.remove('oculto');
+        inputAnimal.setAttribute('name', 'animal-fav');
+        inputAnimal.focus();
+
+        if(inputAnimal != inputAnimal.focus() && inputAnimal.length == 0){
+            selectAnimal.classList.remove('oculto');
+        }
+    }
+});
+
+btnCancelar.addEventListener('click', function(){
+    inputAnimal.value = '';
+    inputAnimal.removeAttribute('name');
+    inputOculto.classList.add('oculto');
+
+    selectAnimal.classList.remove('oculto');
+    selectAnimal.value = '';
+    selectAnimal.setAttribute('name', 'animal-fav');
+})
+
+async function pesquisarCEP(){
+    let cep = document.getElementById('cep').value;
+
+    let api = `https://viacep.com.br/ws/${cep}/json/`;
+    let pegarAPI = await fetch(api);
+    let endereco = await pegarAPI.json();
+
+    let rua = endereco.logradouro;
+    let cidade = endereco.localidade;
+    let bairro = endereco.bairro;
+
+    document.getElementById('cadastro-input-rua').value = rua;
+    document.getElementById('cadastro-input-cidade').value = cidade;
+    document.getElementById('cadastro-input-bairro').value = bairro;
+}

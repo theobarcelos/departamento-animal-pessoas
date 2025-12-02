@@ -991,3 +991,18 @@ td{
 .oculto{
     display: none;
 }
+
+.icon{
+    background-color: var(--cor-laranja);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    height: 50%;
+    align-self: center;
+}
+
+.icon:hover{
+    cursor: pointer;
+    background-color: #fa8108c7;
+    transition: 0.85s ease;
+}

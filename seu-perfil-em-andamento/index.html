@@ -166,10 +166,30 @@
                 <div class="perfil-info" id="info-desc">
                     <label for="perfil-textarea-desc" class="cadastro-label">Descrição</label>
                     <div class="input-container">
-                        <textarea rows="20" id="perfil-textarea-desc" class="cadastro-input" readonly></textarea>
+                        <textarea rows="10" id="perfil-textarea-desc" class="cadastro-input" readonly></textarea>
                         <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit-desc" class="edit" onclick="editarDesc()">
                     </div>
                     <button type="button" class="btn-laranja" id="botao-salvar-desc" onclick="salvarDesc()">Salvar</button>
+                </div>
+
+                <div class="perfil-info" id="info-animal-fav">
+                    <label for="animal-fav" class="cadastro-label">Seu animal favorito é:</label>
+                    <select name="animal-fav" id="animal-fav" class="cadastro-input">
+                        <option value="">Selecionar...</option>
+                        <option value="cachorro">Cachorro</option>
+                        <option value="gato">Gato</option>
+                        <option value="peixe">Peixe</option>
+                        <option value="passaro">Pássaro</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="porquinho-india">Porquinho da Índia</option>
+                        <option value="sarue">Saruê</option>
+                        <option value="outro">Outro...</option>
+                    </select>
+                    <div class="input-oculto oculto" id="input-oculto">
+                        <input type="text" name="input-perfil-animal-fav" id="input-perfil-animal-fav" class="cadastro-input">
+                        <img src="img/cancelar.svg" alt="" class="btn-cancelar" id="btn-cancelar-outro" title="Voltar para a lista">
+                    </div>
+                    <button type="button" class="btn-laranja" id="botao-salvar-animal-fav" onclick="animalFavorito()">Salvar</button>
                 </div>
             </div>
             <div class="lado-direito">
@@ -226,11 +246,12 @@
                 <label for="cep" class="cadastro-label">CEP</label>
                 <div class="input-container">
                     <input type="text" name="cep" id="cep" class="cadastro-input" maxlength="8">
+                    <img src="img/lupa.svg" alt="Pesquisar CEP" id="pesquisar-cep" onclick="pesquisarCEP()" class="icon">
                 </div>
             </div>
             <table>
                 <tr class="data-label">
-                    <th colspan="2"><label for="cadastro-input-rua" id="cadastro-input-rua" class="cadastro-label">Rua</label></th>
+                    <th colspan="2"><label for="cadastro-input-rua" id="cadastro-label-rua" class="cadastro-label">Rua</label></th>
                     <th><label for="cadastro-input-numero" class="cadastro-label">Número</label></th>
                 </tr>
                 <tr class="data-input">

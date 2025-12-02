@@ -251,3 +251,19 @@ btnCancelar.addEventListener('click', function(){
     selectAnimal.value = '';
     selectAnimal.setAttribute('name', 'animal-fav');
 })
+
+async function pesquisarCEP(){
+    let cep = document.getElementById('cep').value;
+
+    let api = `https://viacep.com.br/ws/${cep}/json/`;
+    let pegarAPI = await fetch(api);
+    let endereco = await pegarAPI.json();
+
+    let rua = endereco.logradouro;
+    let cidade = endereco.localidade;
+    let bairro = endereco.bairro;
+
+    document.getElementById('cadastro-input-rua').value = rua;
+    document.getElementById('cadastro-input-cidade').value = cidade;
+    document.getElementById('cadastro-input-bairro').value = bairro;
+}
