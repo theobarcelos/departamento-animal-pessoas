@@ -414,30 +414,32 @@ label, p, a{
     color: var(--cor-branco);
 }
 
-.logo{
-   max-width: 173px;
+.logo-form{
+   max-width: 350px;
    padding: 20px;
-}
-
-.inputs-container{
-    display: flex;
-    flex-direction: column;
 }
 
 .label-login{
     margin: 2px;
 }
 
+.inputs-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
 .input-login{
     border: 2px solid #ccc;
     transition: 0.85s;
     border-radius: 10px;
-    padding: 10px;
-    font-size: 15px;
+    padding: 15px;
+    font-size: 20px;
+    width: 100%;
 }
 
 .input-login:focus{
-    border: 2px solid var(--cor-ciano-medio);
+    border: 2px solid var(--cor-verde-agua);
     outline: none;
     transition: 0.85s;
 }
@@ -449,15 +451,13 @@ label, p, a{
 .inserir-senha-container{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    gap: 10px;
 }
 
-#vis_on{
+.vis-on{
     background-color: var(--cor-laranja);
     border-radius: 5px;
     cursor: pointer;
-    position: absolute;
-    margin-right: 10px;
 }
 
 .button-container{

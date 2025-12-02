@@ -132,8 +132,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function mostrarNovaSenha(){
-    let senha = document.getElementById('senha');
-    let imgOlho = document.getElementById('vis_on');
+    let senha = document.getElementById('nova-senha');
+    let imgOlho = document.getElementById('vis_on-1');
 
     if(senha.type === 'password'){
         senha.type = 'text';
@@ -145,8 +145,8 @@ function mostrarNovaSenha(){
     }
 }
 function mostrarConfSenha(){
-    let senha = document.getElementById('senha');
-    let imgOlho = document.getElementById('vis_on');
+    let senha = document.getElementById('conf-senha');
+    let imgOlho = document.getElementById('vis_on-2');
 
     if(senha.type === 'password'){
         senha.type = 'text';
