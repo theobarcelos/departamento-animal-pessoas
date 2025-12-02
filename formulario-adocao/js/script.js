@@ -131,3 +131,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+let selectTemAnimais = document.getElementById('tem-animais');
+let selectTemCrian = document.getElementById('possui-crian');
+let formQuantosAnimais = document.getElementById('formulario-animais');
+let formQuantasCrian = document.getElementById('formulario-criancas');
+
+selectTemAnimais.addEventListener('change', function(){
+    if(selectTemAnimais.value === "sim-animal"){
+        formQuantosAnimais.classList.remove('oculto');
+    }
+    else{
+        formQuantosAnimais.classList.add('oculto');
+    }
+});
+
+selectTemCrian.addEventListener('change', function(){
+    if(selectTemCrian.value === "sim-crian"){
+        formQuantasCrian.classList.remove('oculto');
+    }
+    else{
+        formQuantasCrian.classList.add('oculto');
+    }
+});

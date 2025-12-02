@@ -161,21 +161,19 @@
                         <label for="adotou-antes" class="formulario-label">Já adotou antes?</label>
                         <select type="text" name="adotou-antes" id="adotou-antes" class="formulario-input">
                             <option value="">Selecionar...</option>
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
+                            <option value="sim-adocao">Sim</option>
+                            <option value="nao-adocao">Não</option>
                         </select>
                     </div>
 
                     <div class="formulario-insert">
                         <label for="tem-animais" class="formulario-label">Você tem animais em casa?</label>
-                        <select type="text" maxlength="11" name="tem-animais" id="tem-animais" class="formulario-input">
+                        <select type="text" name="tem-animais" id="tem-animais" class="formulario-input">
                             <option value="">Selecionar...</option>
-                            <option value="simanimal">Sim</option>
-                            <option value="nao">Não</option>
+                            <option value="sim-animal">Sim</option>
+                            <option value="nao-animal">Não</option>
                         </select>
-                    </div>
-
-                    <div class="formulario-insert" id="formulario-hidden-animais">
+                        <div class="formulario-insert oculto" id="formulario-animais">
                         <label for="quantos-animais" class="formulario-label">Quantos?</label>
                         <select type="date" name="quantos-animais" id="quantos-animais" class="formulario-input">
                             <option value="">Selecionar...</option>
@@ -183,24 +181,28 @@
                             <option value="3oumais_animais">3 ou mais animais</option>
                         </select>
                     </div> 
-                    
-                    <div class="formulario-insert">
-                        <label for="possui-crian-adol" class="formulario-label">Possui criança(s)/adolescentes em casa?</label>
-                        <select type="date" name="possui-crian-adol" id="possui-crian-adol" class="formulario-input">
-                            <option value="">Selecionar...</option>
-                            <option value="sim">Sim</option>
-                            <option value="nao">Não</option>
-                        </select>
+                     
                     </div>
 
-                    <div class="formulario-insert" id="formulario-hidden-criancas">
-                        <label for="quantas-crian-adol" class="formulario-label">Quantas(os)?</label>
-                        <select type="date" name="quantas-crian-adol" id="quantas-crian-adol" class="formulario-input">
+                    
+                    <div class="formulario-insert">
+                        <label for="possui-crian" class="formulario-label">Possui criança(s) em casa?</label>
+                        <select type="date" name="possui-crian" id="possui-crian" class="formulario-input">
+                            <option value="">Selecionar...</option>
+                            <option value="sim-crian">Sim</option>
+                            <option value="nao-crian">Não</option>
+                        </select>
+                        <div class="formulario-insert oculto" id="formulario-criancas">
+                        <label for="quantas-crian" class="formulario-label">Quantas(os)?</label>
+                        <select type="date" name="quantas-crian" id="quantas-crian" class="formulario-input">
                             <option value="">Selecionar...</option>
                             <option value="1a2_crian">1 a 2 crianças</option>
                             <option value="3oumais_crian">3 ou mais crianças</option>
                         </select>
-                    </div>                    
+                    </div> 
+                    </div>
+
+                                       
                     
                     <div class="formulario-insert">
                         <label for="renda-mensal" class="formulario-label">Qual é a sua faixa de renda mensal familiar, em salários mínimos?</label>
