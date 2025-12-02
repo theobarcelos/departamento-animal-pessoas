@@ -131,8 +131,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-let botaoEmail = document.getElementById('botao-email');
-let botaoSMS = document.getElementById('botao-sms');
+let botaoEmail = document.getElementById('button-email');
+let botaoSMS = document.getElementById('button-sms');
 let containerEmail = document.getElementById('container-email');
 let containerSMS = document.getElementById('container-sms');
 
@@ -147,4 +147,17 @@ botaoSMS.addEventListener('click', function(){
     containerEmail.classList.add('oculto');
 
     containerSMS.classList.remove('oculto');
+    
+})
+botaoEmail.addEventListener('click', function(){
+    botaoEmail.classList.remove('btn-claro');
+    botaoEmail.classList.add('btn-laranja');
+
+    botaoSMS.classList.remove('btn-laranja');
+    botaoSMS.classList.add('btn-claro');
+
+    containerEmail.classList.remove('oculto');
+
+    containerSMS.classList.add('oculto');
+    
 })
