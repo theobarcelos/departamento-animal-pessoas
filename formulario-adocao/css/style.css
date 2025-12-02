@@ -1195,7 +1195,7 @@ div[vw-access-button] img {
     margin: 40px;
 }
 
-h1, h2, label{
+.title, label{
     color: var(--cor-verde-agua);
 }
 
@@ -1224,10 +1224,6 @@ form{
     margin-bottom: 20px;
 }
 
-/* #formulario-hidden-animais, #formulario-hidden-criancas{
-    display: none;
-} */
-
 
 .formulario-insert{
     display: flex;
@@ -1249,33 +1245,17 @@ form{
     transition: 0.85s ease;
 }
 
-#pf-cep, #pj-cep{
-    width: 40%;
+#formulario-alerta{
+    background-color: var(--cor-laranja-avermelhado);
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
 }
 
-td{
-    padding: 0px 10px 20px 0px;
-}
-
-.cadastro-input-locale{
-    border: 2px solid #ccc;
-    padding: 15px 15px 15px 10px;
-    border-radius: 16px;
-    width: 100%;
+#formulario-alerta p{
+    color: white;
     font-size: 20px;
-    width: 80%;
-}
-
-.cadastro-input-locale:hover{
-    outline: none;
-    border: 2px solid var(--cor-verde-agua);
-    transition: 0.85s ease;
-}
-
-#cadastro-input-rua{
-    width: 90%;
-}
-
-#cadastro-input-complemento{
-    width: 94%;
+    
 }

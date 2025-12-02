@@ -153,4 +153,32 @@ function showPF(){
     botaoPF.style.display = "none";
 }
 
+function mostrarSenha(){
+    let senha = document.getElementById('senha');
+    let imgOlho = document.getElementById('vis-on');
 
+    if(senha.type === 'password'){
+        senha.type = 'text';
+        imgOlho.src = 'img/vis_off.svg'
+    }
+    else{
+        senha.type = 'password';
+        imgOlho.src = 'img/vis_on.svg'
+    }
+}
+
+async function pesquisarCEP(){
+    let cep = document.getElementById('cep').value;
+
+    let api = `https://viacep.com.br/ws/${cep}/json/`;
+    let pegarAPI = await fetch(api);
+    let endereco = await pegarAPI.json();
+
+    let rua = endereco.logradouro;
+    let cidade = endereco.localidade;
+    let bairro = endereco.bairro;
+
+    document.getElementById('cadastro-input-rua').value = rua;
+    document.getElementById('cadastro-input-cidade').value = cidade;
+    document.getElementById('cadastro-input-bairro').value = bairro;
+}

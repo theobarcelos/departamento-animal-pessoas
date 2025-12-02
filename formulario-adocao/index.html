@@ -155,7 +155,7 @@
         <section class="formulario">
             <form>
                 <div class="formulario-container" id="pf">
-                    <h2 class="title-pf">Formulário de Adoção</h2>
+                    <h2 class="title">Formulário de Adoção</h2>
 
                     <div class="formulario-insert">
                         <label for="adotou-antes" class="formulario-label">Já adotou antes?</label>
@@ -197,13 +197,11 @@
                         <label for="quantas-crian-adol" class="formulario-label">Quantas(os)?</label>
                         <select type="date" name="quantas-crian-adol" id="quantas-crian-adol" class="formulario-input">
                             <option value="">Selecionar...</option>
-                            <option value="1a2_filhos">1 a 2 filhos</option>
-                            <option value="3oumais_filhos">3 ou mais filhos</option>
+                            <option value="1a2_crian">1 a 2 crianças</option>
+                            <option value="3oumais_crian">3 ou mais crianças</option>
                         </select>
                     </div>                    
                     
-                    
-
                     <div class="formulario-insert">
                         <label for="renda-mensal" class="formulario-label">Qual é a sua faixa de renda mensal familiar, em salários mínimos?</label>
                         <select type="text" name="renda-mensal" id="renda-mensal" class="formulario-input">
@@ -220,6 +218,10 @@
                     <div class="formulario-insert" id="info-desc">
                         <label for="motivo-adocao" class="formulario-label">Explique o motivo da adoção:</label>
                         <textarea rows="5" id="motivo-adocao" class="formulario-input"></textarea>
+                    </div>
+
+                    <div class="formulario-insert" id="formulario-alerta">
+                        <p>Seu formulário será enviado para a nossa equipe, que irá avaliá-lo(a) para saber se está apto(a) para a adoção de animais.</p>
                     </div>
                 <a href="../seu-perfil/index.html" class="link-enviar-form"><button type="button" class="btn-laranja">Enviar</button></a>
             </form> 

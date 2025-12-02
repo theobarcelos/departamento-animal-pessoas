@@ -178,27 +178,9 @@
                         <label for="pf-data_nasc" class="cadastro-label">Data de nascimento</label>
                         <input type="date" name="pf-data_nasc" id="pf-data_nasc" class="cadastro-input">
                     </div>
-                    
-                    <div class="cadastro-insert">
-                        <label for="pf-num_tel" class="cadastro-label">Número de telefone</label>
-                        <input type="text" name="pf-num_tel" id="pf-num_tel" class="cadastro-input">
-                    </div>
-
-                    <div class="cadastro-insert">
-                        <label for="pf-email" class="cadastro-label">E-mail</label>
-                        <input type="text" name="pf-email" id="pf-email" class="cadastro-input">
-                    </div>
-
-                    <div class="cadastro-insert">
-                        <label for="pf-senha" class="cadastro-label">Senha</label>
-                        <input type="password" name="pf-senha" id="pf-senha" class="cadastro-input">
-                    </div>
-
-                    <div class="cadastro-insert">
-                        <label for="pf-cep" class="cadastro-label">CEP</label>
-                        <input type="text" name="pf-cep" id="pf-cep" class="cadastro-input" maxlength="8">
-                    </div>
                 </div>
+
+                
 
                 <div class="pj-container" id="pj">
                     <h2 class="title-pj">Dados Empresariais</h2>
@@ -217,25 +199,31 @@
                         <label for="pj-cnpj" class="cadastro-label">CNPJ</label>
                         <input type="text" maxlength="14" name="pj-cnpj" id="pj-cnpj" class="cadastro-input">
                     </div>
-                    
-                    <div class="cadastro-insert">
-                        <label for="pj-num_tel" class="cadastro-label">Número de telefone</label>
-                        <input type="text" name="pj-num_tel" id="pj-num_tel" class="cadastro-input">
-                    </div>
+                </div>
 
-                    <div class="cadastro-insert">
-                        <label for="pj-email" class="cadastro-label">E-mail</label>
-                        <input type="text" name="pj-email" id="pj-email" class="cadastro-input">
-                    </div>
+                <div class="cadastro-insert">
+                    <label for="num_tel" class="cadastro-label">Número de telefone</label>
+                    <input type="text" name="num_tel" id="num_tel" class="cadastro-input">
+                </div>
 
-                    <div class="cadastro-insert">
-                        <label for="pj-senha" class="cadastro-label">Senha</label>
-                        <input type="password" name="pj-senha" id="pj-senha" class="cadastro-input">
-                    </div>
+                <div class="cadastro-insert">
+                    <label for="email" class="cadastro-label">E-mail</label>
+                    <input type="text" name="email" id="email" class="cadastro-input">
+                </div>
 
-                    <div class="cadastro-insert">
-                        <label for="pj-cep" class="cadastro-label">CEP</label>
-                        <input type="text" name="pj-cep" id="pj-cep" class="cadastro-input" maxlength="8">
+                <div class="cadastro-insert">
+                    <label for="senha" class="cadastro-label">Senha</label>
+                    <div class="input-container">
+                        <input type="password" name="senha" id="senha" class="cadastro-input">
+                        <img src="img/vis_on.svg" alt="Mostrar Senha" id="vis-on" onclick="mostrarSenha()" class="icon">
+                    </div>
+                </div>
+
+                <div class="cadastro-insert">
+                    <label for="cep" class="cadastro-label">CEP</label>
+                    <div class="input-container">
+                        <input type="text" name="cep" id="cep" class="cadastro-input" maxlength="8">
+                        <img src="img/lupa.svg" alt="Pesquisar CEP" id="pesquisar-cep" onclick="pesquisarCEP()" class="icon">
                     </div>
                 </div>
                 
