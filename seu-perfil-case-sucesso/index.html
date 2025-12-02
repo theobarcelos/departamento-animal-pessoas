@@ -158,7 +158,7 @@
                 <div class="perfil-info" id="info-nome">
                     <label for="input-perfil-nome" class="cadastro-label">Nome completo</label>
                     <div class="input-container">
-                        <input type="text" name="input-perfil-nome" id="input-perfil-nome" class="cadastro-input" readonly>
+                        <input type="text" value="Paula Castilho Mendes" name="input-perfil-nome" id="input-perfil-nome" class="cadastro-input" readonly>
                         <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit-nome" class="edit" onclick="editarNome()">
                     </div>
                     <button type="button" class="btn-laranja" id="botao-salvar-nome" onclick="salvarNome()">Salvar</button>
@@ -166,7 +166,7 @@
                 <div class="perfil-info" id="info-desc">
                     <label for="perfil-textarea-desc" class="cadastro-label">Descrição</label>
                     <div class="input-container">
-                        <textarea rows="10" id="perfil-textarea-desc" class="cadastro-input" readonly></textarea>
+                        <textarea rows="10" id="perfil-textarea-desc" class="cadastro-input" readonly>Estou muito feliz com o novo site da Prefeitura de Votorantim para adoção de pets! Assim que entrei, fiquei impressionada com a quantidade de animais lindos esperando por um lar — cachorros, gatos, pássaros e até outros bichinhos que eu nem imaginava encontrar por lá. Sempre tive o sonho de adotar um cachorro, e agora sinto que chegou a hora certa. Quero poder oferecer tudo o que ele merece: carinho, segurança, atenção e um cantinho cheio de amor. A ideia de poder mudar a vida de um animal e, ao mesmo tempo, transformar a minha me deixa muito animada. Já fico imaginando os passeios, as brincadeiras e até as bagunças que virão. Adotar é um gesto de amor, e esse novo site torna tudo mais fácil e acessível. Mal posso esperar para encontrar meu novo melhor amigo!</textarea>
                         <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit-desc" class="edit" onclick="editarDesc()">
                     </div>
                     <button type="button" class="btn-laranja" id="botao-salvar-desc" onclick="salvarDesc()">Salvar</button>
@@ -218,7 +218,7 @@
             <div class="dados-info">
                 <label for="input-dados-email" class="cadastro-label">E-mail</label>
                 <div class="input-container">
-                    <input type="text" name="input-perfil-email" id="input-perfil-email" class="cadastro-input" readonly>
+                    <input type="text" value="paulamendes@gmail.com" name="input-perfil-email" id="input-perfil-email" class="cadastro-input" readonly>
                     <img src="img/edit_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg" alt="" id="edit-email" class="edit" onclick="editarEmail()">
                 </div>
                 <button type="button" class="btn-laranja" id="botao-salvar-email" onclick="salvarEmail()">Salvar</button>
@@ -227,7 +227,7 @@
             <div class="dados-info" id="info-senha">
                 <label for="input-dados-senha" class="cadastro-label">Senha</label>
                 <div class="input-container">
-                    <input type="password" name="input-dados-senha" id="input-dados-senha" class="cadastro-input">
+                    <input type="password" value="caramelo12345" name="input-dados-senha" id="input-dados-senha" class="cadastro-input">
                     <img src="img/vis_on.svg" alt="Mostrar Senha" id="vis-on" onclick="mostrarSenha()" class="vis-on">
                 </div>
 
@@ -242,11 +242,12 @@
                     <input type="password" name="input-dados-conf-senha" id="input-dados-conf-senha" class="cadastro-input">
                     <img src="img/vis_on.svg" alt="Mostrar Senha" id="vis-on-3" onclick="mostrarConfSenha()" class="vis-on">
                 </div>
+                <button class="btn-laranja" id="redef-senha">Redefinir Senha</button>
             </div>
             <div class="dados-info" id="info-cep">
                 <label for="cep" class="cadastro-label">CEP</label>
                 <div class="input-container">
-                    <input type="text" name="cep" id="cep" class="cadastro-input" maxlength="8">
+                    <input type="text" value="18110008" name="cep" id="cep" class="cadastro-input" maxlength="8">
                     <img src="img/lupa.svg" alt="Pesquisar CEP" id="pesquisar-cep" onclick="pesquisarCEP()" class="icon">
                 </div>
             </div>
@@ -256,8 +257,8 @@
                     <th><label for="cadastro-input-numero" class="cadastro-label">Número</label></th>
                 </tr>
                 <tr class="data-input">
-                    <td colspan="2"><input type="text" id="cadastro-input-rua" class="cadastro-input-locale"></td>
-                    <td><input type="text" id="cadastro-input-numero" class="cadastro-input-locale"></td>
+                    <td colspan="2"><input type="text" value="Avenida Juscelino Kubitschek de Oliveira" id="cadastro-input-rua" class="cadastro-input-locale"></td>
+                    <td><input type="text" value="279" id="cadastro-input-numero" class="cadastro-input-locale"></td>
                 </tr>
                 <tr class="data-label">
                     <th class="data-container"><label for="cadastro-input-cidade" class="cadastro-label">Cidade</label></th>
@@ -266,8 +267,8 @@
                 </tr>
 
                 <tr class="data-input">
-                    <td class="data-container"><input type="text" id="cadastro-input-cidade"  class="cadastro-input-locale"></td>
-                    <td class="data-container"><input type="text" id="cadastro-input-bairro"  class="cadastro-input-locale"></td>
+                    <td class="data-container"><input type="text" value="Votorantim" id="cadastro-input-cidade"  class="cadastro-input-locale"></td>
+                    <td class="data-container"><input type="text" value="Centro" id="cadastro-input-bairro"  class="cadastro-input-locale"></td>
                     <td class="data-container">
                         <select type="text" id="cadastro-input-uf"  class="cadastro-input-locale">
                             <option value="acre">AC</option>
@@ -293,7 +294,7 @@
                             <option value="rondonia">RO</option>
                             <option value="roraima">RR</option>
                             <option value="santa-catarina">SC</option>
-                            <option value="sao-paulo">SP</option>
+                            <option value="sao-paulo" selected>SP</option>
                             <option value="sergipe">SE</option>
                             <option value="tocantins">TO</option>
                         </select>
@@ -304,7 +305,7 @@
                     <th colspan="3"><label for="cadastro-input-complemento" class="cadastro-label">Complemento</label></th>
                 </tr>
                 <tr>
-                    <td colspan="3"><input type="text" id="cadastro-input-complemento" class="cadastro-input-locale"></td>
+                    <td colspan="3"><input type="text" value="Fatec Votorantim" id="cadastro-input-complemento" class="cadastro-input-locale"></td>
                 </tr>
             </table> 
         </section>
