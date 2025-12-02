@@ -857,21 +857,48 @@ label{
     align-items: center;
     justify-content: space-around;
     width: 50%;
+    gap: 20px;
 }
 
 .lado-esquerdo{
     display: flex;
     flex-direction: column;
     width: 50%;
-    gap: 20px;
 }
 
 #info-img, #info-adocao{
     align-items: center;
 }
 
+.adocao-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info-adocao{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid var(--cor-verde-agua);
+    border-radius: 20px;
+    padding: 20px;
+    width: 50%;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.img-animal{
+    width: 80%;
+    border-radius: 50%;
+}
+
 .p-adocao{
     width: 50%;
+}
+
+.adocao-container{
+    align-self: center;
 }
 
 .foto-perfil{
@@ -955,39 +982,3 @@ td{
 #cadastro-input-complemento{
     width: 94%;
 } 
-
-#info-animal-fav{
-    gap: 20px;
-}
-
-#animal-fav{
-    width: 94%;
-}
-
-.input-oculto{
-    display: flex;
-}
-
-.btn-cancelar{
-    border-radius: 10px;
-    background-color: var(--cor-laranja-avermelhado);
-    transition: 0.85s ease;
-    height: fit-content;
-    align-self: center;
-    margin-left: 10px;
-}
-
-.btn-cancelar:hover{
-    cursor: pointer;
-    background-color: #f244058a;
-    transition: 0.85s ease;
-}
-
-#botao-salvar-animal-fav{
-    width: 50%;
-    align-self: center;
-}
-
-.oculto{
-    display: none;
-}
