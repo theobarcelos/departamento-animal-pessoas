@@ -1038,3 +1038,9 @@ td{
 #textarea-case-sucesso{
     font-size: 20px;
 }
+
+#redef-senha{
+    width: 50%;
+    align-self: center;
+    margin-top: 20px;
+}
