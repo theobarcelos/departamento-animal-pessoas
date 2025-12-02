@@ -163,7 +163,6 @@ a {
     min-width: 70px;
     height: 60px;
     z-index: 1;
-    position: fixed;
 }
 
 .btn-menu .material-symbols-rounded {
@@ -1142,6 +1141,10 @@ div[vw-access-button] img {
     color: var(--cor-branco);
     margin: 0.2em;
 }
+.Cont-menu li:hover{
+    color: var(--cor-ciano-claro);
+    border-bottom: solid var(--cor-ciano-claro) 1PX;
+}
 .Sair{
     list-style: none;
     margin: 1em 0;
@@ -1157,4 +1160,8 @@ div[vw-access-button] img {
     background-color: var(--cor-laranja-avermelhado);
     border: solid var(--cor-laranja-avermelhado);
 
+}
+.Noti-Menu{
+    
+    border:solid var(--cor-escuro) 2px;
 }
