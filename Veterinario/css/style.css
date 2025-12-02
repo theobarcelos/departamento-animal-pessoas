@@ -1210,6 +1210,27 @@ div[vw-access-button] img {
     color: var(--cor-verde-petroleo);
     font-weight: bold;
 }
-.Itens-cima{
+.Itens{
     display: flex;
+    justify-content: space-around;
+    
+}
+.Itens p{
+    width: 15vw;   
+    padding: 0 0 0 10px ;
+    border: solid var(--cor-verde-petroleo) 1px;
+    border-radius: 6px;
+ 
+}
+.Cont-conteiner{
+    display: flex;
+    flex-direction:column ;
+    width: 70%;
+}
+.Itens div{
+    align-items: center;
+}
+.link{
+    display: flex;
+    flex-direction: column-reverse;
 }
