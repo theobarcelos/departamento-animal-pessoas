@@ -1193,9 +1193,51 @@ div[vw-access-button] img {
 }
 .Cont-itens{
     display: flex;
+    flex-direction: row;
     width: 90%;
     background-color: var(--cor-branco);
     padding: 1em;
     margin: 1em;
     border-radius: 5px;
+}
+.Cont-itens img{
+    width: 10vw;
+    height: auto;
+    margin: 0.2em;
+
+}
+.Cont-itens label{
+    color: var(--cor-verde-petroleo);
+    font-weight: bold;
+}
+.Itens{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.Itens p{
+    width: 15vw;   
+    padding: 0 0 0 10px ;
+    border: solid var(--cor-verde-petroleo) 1px;
+    border-radius: 6px;
+ 
+}
+.Cont-conteiner{
+    display: flex;
+    flex-direction:column ;
+    width: 70%;
+}
+.Itens div{
+    align-items: center;
+}
+.link{
+    display: flex;
+}
+.link a{
+    color: var(--cor-verde-petroleo);
+}
+#Edit{
+    width: 30%;
+    border-radius: 10px;
+    background-color: var(--cor-laranja);
 }

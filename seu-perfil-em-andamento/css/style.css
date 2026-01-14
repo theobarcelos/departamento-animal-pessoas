@@ -758,6 +758,7 @@ div[vw-access-button] img {
     color: var(--cor-verde-agua);
 }
 
+
 label{
     font-weight: 500;
     font-size: 20px;
@@ -855,6 +856,7 @@ label{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 50%;
     
 }
